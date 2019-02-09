@@ -36,6 +36,11 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return temp > minHeight ? temp: minHeight
     }
    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(indexPath.section == 0){
+           performSegue(withIdentifier: TO_PEOPLE, sender: nil)
+        }
+    }
     
 }
 
