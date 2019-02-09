@@ -9,3 +9,4 @@
 import Foundation
 
 let URL = "https://swapi.co/api/"
+let PEOPLE_URL = URL+"people"
