@@ -10,11 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var ResultLbl: UILabel!
+    @IBOutlet weak var searchTxtField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func searchBtnPressed(_ sender: Any) {
+    }
+    
 }
 
