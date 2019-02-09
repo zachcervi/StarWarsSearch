@@ -9,4 +9,5 @@ target 'StarWarsSearch' do
 
   # Pods for StarWarsSearch
 pod 'Alamofire'
+pod 'SwiftyJSON'
 end

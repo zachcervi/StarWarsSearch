@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A8C5534058FE320EDDB3632FD695CCFE"
-               BlueprintName = "Pods-StarWarsSearch"
+               BlueprintIdentifier = "B7C61B0387EF31F04AC3A98F62AB2599"
+               BlueprintName = "SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Pods-StarWarsSearch.framework">
+               BuildableName = "SwiftyJSON.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
