@@ -1,87 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vna-gw-4d7">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MainVC-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="StarWarsSearch" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RnR-gA-jDZ">
-                                <rect key="frame" x="0.0" y="91" width="375" height="721"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="resource" rowHeight="97" id="4j2-0d-Jvm" customClass="MenuCell" customModule="StarWarsSearch" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="97"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4j2-0d-Jvm" id="z4p-BQ-P4Z">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="People" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyK-K7-3Ne">
-                                                    <rect key="frame" x="15" y="34" width="345" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="vWB-wM-jFg"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
-                                                    <color key="textColor" red="1" green="0.84705882349999995" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="lyK-K7-3Ne" firstAttribute="leading" secondItem="z4p-BQ-P4Z" secondAttribute="leadingMargin" id="3kr-uW-IFZ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="lyK-K7-3Ne" secondAttribute="bottom" constant="22" id="FvL-yx-jXF"/>
-                                                <constraint firstItem="lyK-K7-3Ne" firstAttribute="trailing" secondItem="z4p-BQ-P4Z" secondAttribute="trailingMargin" id="fhH-Z9-Nds"/>
-                                                <constraint firstItem="lyK-K7-3Ne" firstAttribute="top" secondItem="z4p-BQ-P4Z" secondAttribute="topMargin" constant="23" id="gFo-Pk-g1J"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="menuOptionLbl" destination="lyK-K7-3Ne" id="ZMu-Cm-cOW"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star Wars Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQe-qG-TIh">
-                                <rect key="frame" x="107.33333333333333" y="44" width="160.33333333333337" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="u4x-uV-15C"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.84705882349999995" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <constraints>
-                            <constraint firstItem="RnR-gA-jDZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2dm-5M-ium"/>
-                            <constraint firstItem="RnR-gA-jDZ" firstAttribute="top" secondItem="gQe-qG-TIh" secondAttribute="bottom" constant="17" id="3wK-p9-a5Y"/>
-                            <constraint firstAttribute="bottom" secondItem="RnR-gA-jDZ" secondAttribute="bottom" id="7Yi-G5-e6A"/>
-                            <constraint firstItem="gQe-qG-TIh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hF-4e-sS8"/>
-                            <constraint firstItem="RnR-gA-jDZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="IbC-lR-gco"/>
-                            <constraint firstItem="gQe-qG-TIh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XBe-cG-eth"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <connections>
-                        <outlet property="MenuTV" destination="RnR-gA-jDZ" id="QWh-E1-6vk"/>
-                        <segue destination="ibe-ub-7cT" kind="show" identifier="toPeople" id="t7V-vp-z70"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-386" y="125"/>
-        </scene>
         <!--People-->
         <scene sceneID="7Mg-cZ-pBe">
             <objects>
@@ -128,7 +55,75 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLw-fW-uYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="858.39999999999998" y="124.8768472906404"/>
+            <point key="canvasLocation" x="3889" y="142"/>
+        </scene>
+        <!--Star Wars-->
+        <scene sceneID="Sfq-8i-gTf">
+            <objects>
+                <tableViewController id="68j-ci-7nh" customClass="MenuVC" customModule="StarWarsSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Wh1-nx-hac">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" rowHeight="82" id="xkX-2r-yhy" customClass="MenuCell" customModule="StarWarsSearch" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="82"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xkX-2r-yhy" id="saj-M8-oAH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h3-Wk-BeK">
+                                            <rect key="frame" x="166.66666666666666" y="29.666666666666671" width="41.666666666666657" height="22.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.84705882349999995" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5h3-Wk-BeK" firstAttribute="centerY" secondItem="saj-M8-oAH" secondAttribute="centerY" id="CE7-Fm-B7i"/>
+                                        <constraint firstItem="5h3-Wk-BeK" firstAttribute="centerX" secondItem="saj-M8-oAH" secondAttribute="centerX" id="g9h-Jy-vuA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="menuOptionLbl" destination="5h3-Wk-BeK" id="BZS-0P-lAp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="68j-ci-7nh" id="dCK-Fa-Bob"/>
+                            <outlet property="delegate" destination="68j-ci-7nh" id="uDx-4d-Tdd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Star Wars" id="sOW-WS-eyc"/>
+                    <connections>
+                        <segue destination="ibe-ub-7cT" kind="show" identifier="toPeople" id="3F5-45-UqP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nyv-rO-hWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2848.8000000000002" y="141.87192118226602"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R7f-GE-XQE">
+            <objects>
+                <navigationController id="vna-gw-4d7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TPm-C6-2mx">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.84705882349999995" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="68j-ci-7nh" kind="relationship" relationship="rootViewController" id="3kh-WA-1kJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbe-eF-6OF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894" y="142"/>
         </scene>
     </scenes>
 </document>

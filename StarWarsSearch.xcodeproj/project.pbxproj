@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5E3081C4220E972800CE8A62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3081C3220E972800CE8A62 /* Constants.swift */; };
+		5E61E8AA220F7B7F00CA1728 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E61E8A9220F7B7F00CA1728 /* MenuVC.swift */; };
 		5E647028220EA0A700FA9D1F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E647027220EA0A700FA9D1F /* MenuCell.swift */; };
 		5E64702A220EA14900FA9D1F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E647029220EA14900FA9D1F /* Resources.swift */; };
 		5E64702C220EA8C200FA9D1F /* PeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64702B220EA8C200FA9D1F /* PeopleVC.swift */; };
 		5E709258220E8F98003EEF81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E709257220E8F98003EEF81 /* AppDelegate.swift */; };
-		5E70925A220E8F98003EEF81 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E709259220E8F98003EEF81 /* MainVC.swift */; };
 		5E70925D220E8F98003EEF81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E70925B220E8F98003EEF81 /* Main.storyboard */; };
 		5E70925F220E8F99003EEF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E70925E220E8F99003EEF81 /* Assets.xcassets */; };
 		5E709262220E8F99003EEF81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E709260220E8F99003EEF81 /* LaunchScreen.storyboard */; };
@@ -23,12 +23,12 @@
 /* Begin PBXFileReference section */
 		3025425A7048F3966893020B /* Pods-StarWarsSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsSearch/Pods-StarWarsSearch.release.xcconfig"; sourceTree = "<group>"; };
 		5E3081C3220E972800CE8A62 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E61E8A9220F7B7F00CA1728 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuVC.swift; path = /Users/zachcervi/Documents/StarWarsSearch/StarWarsSearch/Controller/MenuVC.swift; sourceTree = "<absolute>"; };
 		5E647027220EA0A700FA9D1F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		5E647029220EA14900FA9D1F /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		5E64702B220EA8C200FA9D1F /* PeopleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVC.swift; sourceTree = "<group>"; };
 		5E709254220E8F98003EEF81 /* StarWarsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E709257220E8F98003EEF81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E709259220E8F98003EEF81 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		5E70925C220E8F98003EEF81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E70925E220E8F99003EEF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E709261220E8F99003EEF81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		5E3081BF220E942000CE8A62 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5E709259220E8F98003EEF81 /* MainVC.swift */,
+				5E61E8A9220F7B7F00CA1728 /* MenuVC.swift */,
 				5E64702B220EA8C200FA9D1F /* PeopleVC.swift */,
 			);
 			path = Controller;
@@ -250,10 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EA4F1CC220EB7F700334B8C /* PeopleCell.swift in Sources */,
-				5E70925A220E8F98003EEF81 /* MainVC.swift in Sources */,
 				5E64702C220EA8C200FA9D1F /* PeopleVC.swift in Sources */,
 				5E709258220E8F98003EEF81 /* AppDelegate.swift in Sources */,
 				5E647028220EA0A700FA9D1F /* MenuCell.swift in Sources */,
+				5E61E8AA220F7B7F00CA1728 /* MenuVC.swift in Sources */,
 				5E64702A220EA14900FA9D1F /* Resources.swift in Sources */,
 				5E3081C4220E972800CE8A62 /* Constants.swift in Sources */,
 			);
