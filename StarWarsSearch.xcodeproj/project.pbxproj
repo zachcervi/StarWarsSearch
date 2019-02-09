@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E3081C4220E972800CE8A62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3081C3220E972800CE8A62 /* Constants.swift */; };
+		5E647028220EA0A700FA9D1F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E647027220EA0A700FA9D1F /* MenuCell.swift */; };
+		5E64702A220EA14900FA9D1F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E647029220EA14900FA9D1F /* Resources.swift */; };
 		5E709258220E8F98003EEF81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E709257220E8F98003EEF81 /* AppDelegate.swift */; };
 		5E70925A220E8F98003EEF81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E709259220E8F98003EEF81 /* ViewController.swift */; };
 		5E70925D220E8F98003EEF81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E70925B220E8F98003EEF81 /* Main.storyboard */; };
 		5E70925F220E8F99003EEF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E70925E220E8F99003EEF81 /* Assets.xcassets */; };
 		5E709262220E8F99003EEF81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E709260220E8F99003EEF81 /* LaunchScreen.storyboard */; };
+		DD45F3E90E4A0F8F6C753351 /* Pods_StarWarsSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6C343DD3E0123F9E3846B91 /* Pods_StarWarsSearch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3025425A7048F3966893020B /* Pods-StarWarsSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsSearch/Pods-StarWarsSearch.release.xcconfig"; sourceTree = "<group>"; };
+		5E3081C3220E972800CE8A62 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E647027220EA0A700FA9D1F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		5E647029220EA14900FA9D1F /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		5E709254220E8F98003EEF81 /* StarWarsSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E709257220E8F98003EEF81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E709259220E8F98003EEF81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,8 @@
 		5E70925E220E8F99003EEF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E709261220E8F99003EEF81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E709263220E8F99003EEF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C343DD3E0123F9E3846B91 /* Pods_StarWarsSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarsSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC534FA54A7F13D45E5CF18 /* Pods-StarWarsSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsSearch/Pods-StarWarsSearch.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +39,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD45F3E90E4A0F8F6C753351 /* Pods_StarWarsSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32F4C3E98DA017D2E0B4E627 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBC534FA54A7F13D45E5CF18 /* Pods-StarWarsSearch.debug.xcconfig */,
+				3025425A7048F3966893020B /* Pods-StarWarsSearch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5E3081BF220E942000CE8A62 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +66,7 @@
 		5E3081C0220E942700CE8A62 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5E647027220EA0A700FA9D1F /* MenuCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -53,6 +74,7 @@
 		5E3081C1220E942D00CE8A62 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5E647029220EA14900FA9D1F /* Resources.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -60,6 +82,7 @@
 		5E3081C2220E943A00CE8A62 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				5E3081C3220E972800CE8A62 /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -69,6 +92,8 @@
 			children = (
 				5E709256220E8F98003EEF81 /* StarWarsSearch */,
 				5E709255220E8F98003EEF81 /* Products */,
+				32F4C3E98DA017D2E0B4E627 /* Pods */,
+				FD49FB90C55E4369FD5C8C2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +121,14 @@
 			path = StarWarsSearch;
 			sourceTree = "<group>";
 		};
+		FD49FB90C55E4369FD5C8C2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6C343DD3E0123F9E3846B91 /* Pods_StarWarsSearch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E709266220E8F99003EEF81 /* Build configuration list for PBXNativeTarget "StarWarsSearch" */;
 			buildPhases = (
+				FB910BABA9F1737538653E5E /* [CP] Check Pods Manifest.lock */,
 				5E709250220E8F98003EEF81 /* Sources */,
 				5E709251220E8F98003EEF81 /* Frameworks */,
 				5E709252220E8F98003EEF81 /* Resources */,
+				A3B237705DD946B657691E0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +197,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A3B237705DD946B657691E0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StarWarsSearch/Pods-StarWarsSearch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StarWarsSearch/Pods-StarWarsSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB910BABA9F1737538653E5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarWarsSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E709250220E8F98003EEF81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -169,6 +243,9 @@
 			files = (
 				5E70925A220E8F98003EEF81 /* ViewController.swift in Sources */,
 				5E709258220E8F98003EEF81 /* AppDelegate.swift in Sources */,
+				5E647028220EA0A700FA9D1F /* MenuCell.swift in Sources */,
+				5E64702A220EA14900FA9D1F /* Resources.swift in Sources */,
+				5E3081C4220E972800CE8A62 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +389,7 @@
 		};
 		5E709267220E8F99003EEF81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC534FA54A7F13D45E5CF18 /* Pods-StarWarsSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +408,7 @@
 		};
 		5E709268220E8F99003EEF81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3025425A7048F3966893020B /* Pods-StarWarsSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -7,18 +7,35 @@
 //
 
 import UIKit
+import Alamofire
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var ResultLbl: UILabel!
-    @IBOutlet weak var searchTxtField: UITextField!
+    @IBOutlet weak var MenuTV: UITableView!
+    var resources = Resources.resources
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.MenuTV.delegate = self
+        self.MenuTV.dataSource = self
     }
-
-    @IBAction func searchBtnPressed(_ sender: Any) {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Resources.resources.count
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = self.MenuTV.dequeueReusableCell(withIdentifier: "resource") as? MenuCell else {return UITableViewCell()}
+        
+        cell.configureCell(text: resources[indexPath.item])
+        return cell
+    }
+    let minHeight: CGFloat = 100.0
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let tHeight = MenuTV.bounds.height
+        let temp = tHeight/CGFloat(resources.count)
+        
+        return temp > minHeight ? temp: minHeight
+    }
+   
     
 }
 
