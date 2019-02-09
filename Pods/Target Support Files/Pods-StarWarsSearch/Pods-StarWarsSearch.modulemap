@@ -1,0 +1,6 @@
+framework module Pods_StarWarsSearch {
+  umbrella header "Pods-StarWarsSearch-umbrella.h"
+
+  export *
+  module * { export * }
+}
