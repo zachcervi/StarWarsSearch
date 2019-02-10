@@ -45,6 +45,16 @@ class SpeciesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
              let speciesToShow = species[indexPath.row]
                cell.configureCell(text: speciesToShow.name!)
                 
+                let rowsToLoadFromBottom = 5
+                let rowsLoaded = species.count
+                
+                if(!self.isLoading && (indexPath.row >= (rowsLoaded - rowsToLoadFromBottom))){
+                    let totalRows = self.speciesWrapper?.count ?? 0
+                    let remainingRowsToLoad = totalRows - rowsLoaded
+                    if(remainingRowsToLoad > 0){
+                        self.loadMoreSpecies()
+                    }
+                }
             }
         }
         
@@ -73,6 +83,25 @@ class SpeciesVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             self.isLoading = false
             self.speciesTableView?.reloadData()
         }
+    }
+    func loadMoreSpecies() {
+        isLoading = true
+        if let species = self.species,
+        let wrapper = self.speciesWrapper,
+            let totalSpeciesCount = wrapper.count,
+            species.count < totalSpeciesCount {
+            Species.getMoreSpecies(speciesWrapper) { (result) in
+                if let error = result.error {
+                    self.isLoading = false
+                    print("Could not load more species. Error \(error)")
+                }
+                let moreWrapper = result.value
+                self.addSpeciesFromWrapper(moreWrapper)
+                self.isLoading = false
+                self.speciesTableView.reloadData()
+            }
+        }
+        
     }
     
     func addSpeciesFromWrapper(_ wrapper: SpeciesWrapper?) {
