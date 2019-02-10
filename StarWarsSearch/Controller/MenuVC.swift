@@ -45,8 +45,10 @@ class MenuVC: UITableViewController {
         return temp > minHeight ? temp: minHeight
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(indexPath.section == 0){
+        if(indexPath.row == 0){
             performSegue(withIdentifier: TO_PEOPLE, sender: nil)
+        }else if (indexPath.row == 4){
+            performSegue(withIdentifier: TO_SPECIES, sender: nil)
         }
     }
 

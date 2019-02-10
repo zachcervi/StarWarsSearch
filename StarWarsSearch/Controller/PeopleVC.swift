@@ -39,8 +39,7 @@ class PeopleVC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+    
         guard let cell = self.tableView.dequeueReusableCell(withIdentifier: "peopleCell") as? PeopleCell else {
             return UITableViewCell()
         }

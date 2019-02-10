@@ -10,7 +10,9 @@ import Foundation
 
 //urls
 let URL = "https://swapi.co/api/"
-let PEOPLE_URL = URL+"people"
+let PEOPLE_URL = URL+"people/"
+let SPECIES_URL = URL+"species/"
 
 //segues
 let TO_PEOPLE = "toPeople"
+let TO_SPECIES = "toSpecies"

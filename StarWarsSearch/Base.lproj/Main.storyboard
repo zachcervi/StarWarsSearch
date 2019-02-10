@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,7 +56,93 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLw-fW-uYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3889" y="142"/>
+            <point key="canvasLocation" x="3671" y="-596"/>
+        </scene>
+        <!--SpeciesVC-->
+        <scene sceneID="bxE-tl-4pO">
+            <objects>
+                <viewController id="krs-8N-u3m" customClass="SpeciesVC" customModule="StarWarsSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMe-eD-SxF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-tH-hKU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ief-6G-QQZ">
+                                        <rect key="frame" x="0.0" y="87" width="375" height="725"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="speciesCell" rowHeight="71" id="uny-UI-hp3" customClass="SpeciesCell" customModule="StarWarsSearch" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="71"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uny-UI-hp3" id="rMg-Va-vKZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsi-6M-1K8">
+                                                            <rect key="frame" x="15" y="20.333333333333329" width="345" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="o7g-yb-CPB"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="21"/>
+                                                            <color key="textColor" red="1" green="0.84705882349999995" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="tsi-6M-1K8" firstAttribute="leading" secondItem="rMg-Va-vKZ" secondAttribute="leadingMargin" id="1jL-51-eYS"/>
+                                                        <constraint firstItem="tsi-6M-1K8" firstAttribute="centerX" secondItem="rMg-Va-vKZ" secondAttribute="centerX" id="WqW-Ns-Kn4"/>
+                                                        <constraint firstItem="tsi-6M-1K8" firstAttribute="trailing" secondItem="rMg-Va-vKZ" secondAttribute="trailingMargin" id="XMx-B9-w5Y"/>
+                                                        <constraint firstItem="tsi-6M-1K8" firstAttribute="centerY" secondItem="rMg-Va-vKZ" secondAttribute="centerY" id="iPD-Ge-asu"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="speciesLbl" destination="tsi-6M-1K8" id="ZH7-0c-dvQ"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWs-oG-Cek">
+                                        <rect key="frame" x="0.0" y="43" width="375" height="44"/>
+                                        <color key="barTintColor" red="0.094117647058823528" green="0.094117647058823528" blue="0.094117647058823528" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.84705882349999995" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="Species" id="Mrd-R6-qgT"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.074509803920000006" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ief-6G-QQZ" firstAttribute="leading" secondItem="ZbZ-tH-hKU" secondAttribute="leading" id="0Zp-wY-J6T"/>
+                                    <constraint firstItem="xWs-oG-Cek" firstAttribute="leading" secondItem="ZbZ-tH-hKU" secondAttribute="leading" id="6r1-Zy-EOE"/>
+                                    <constraint firstAttribute="trailing" secondItem="ief-6G-QQZ" secondAttribute="trailing" id="AgV-ws-Ngn"/>
+                                    <constraint firstItem="xWs-oG-Cek" firstAttribute="top" secondItem="ZbZ-tH-hKU" secondAttribute="top" constant="43" id="XJ7-Gm-zrf"/>
+                                    <constraint firstItem="ief-6G-QQZ" firstAttribute="top" secondItem="xWs-oG-Cek" secondAttribute="bottom" id="goc-bh-Axn"/>
+                                    <constraint firstAttribute="trailing" secondItem="xWs-oG-Cek" secondAttribute="trailing" id="ofM-wx-ZrT"/>
+                                    <constraint firstAttribute="bottom" secondItem="ief-6G-QQZ" secondAttribute="bottom" id="zSV-Q7-dG5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZbZ-tH-hKU" firstAttribute="trailing" secondItem="Fw8-cZ-UCg" secondAttribute="trailing" id="f9O-oe-yOE"/>
+                            <constraint firstItem="ZbZ-tH-hKU" firstAttribute="top" secondItem="SMe-eD-SxF" secondAttribute="top" id="liu-yy-MRR"/>
+                            <constraint firstItem="ZbZ-tH-hKU" firstAttribute="leading" secondItem="Fw8-cZ-UCg" secondAttribute="leading" id="mLM-QC-yc1"/>
+                            <constraint firstAttribute="bottom" secondItem="ZbZ-tH-hKU" secondAttribute="bottom" id="xKz-cH-foG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fw8-cZ-UCg"/>
+                    </view>
+                    <connections>
+                        <outlet property="speciesTableView" destination="ief-6G-QQZ" id="mOG-Ke-2bw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbi-B2-kYl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3929" y="126"/>
         </scene>
         <!--Star Wars-->
         <scene sceneID="Sfq-8i-gTf">
@@ -98,6 +185,7 @@
                     <navigationItem key="navigationItem" title="Star Wars" id="sOW-WS-eyc"/>
                     <connections>
                         <segue destination="ibe-ub-7cT" kind="show" identifier="toPeople" id="3F5-45-UqP"/>
+                        <segue destination="krs-8N-u3m" kind="show" identifier="toSpecies" id="UxN-Z4-OJC"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nyv-rO-hWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
