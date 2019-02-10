@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5E3081C4220E972800CE8A62 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3081C3220E972800CE8A62 /* Constants.swift */; };
 		5E61E8AA220F7B7F00CA1728 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E61E8A9220F7B7F00CA1728 /* MenuVC.swift */; };
+		5E61E8AC220FCBFD00CA1728 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E61E8AB220FCBFD00CA1728 /* Species.swift */; };
+		5E61E8AE220FE67300CA1728 /* SpeciesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E61E8AD220FE67300CA1728 /* SpeciesVC.swift */; };
+		5E61E8B0220FE6A600CA1728 /* SpeciesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E61E8AF220FE6A600CA1728 /* SpeciesCell.swift */; };
 		5E647028220EA0A700FA9D1F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E647027220EA0A700FA9D1F /* MenuCell.swift */; };
 		5E64702A220EA14900FA9D1F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E647029220EA14900FA9D1F /* Resources.swift */; };
 		5E64702C220EA8C200FA9D1F /* PeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E64702B220EA8C200FA9D1F /* PeopleVC.swift */; };
@@ -24,6 +27,9 @@
 		3025425A7048F3966893020B /* Pods-StarWarsSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-StarWarsSearch/Pods-StarWarsSearch.release.xcconfig"; sourceTree = "<group>"; };
 		5E3081C3220E972800CE8A62 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5E61E8A9220F7B7F00CA1728 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuVC.swift; path = /Users/zachcervi/Documents/StarWarsSearch/StarWarsSearch/Controller/MenuVC.swift; sourceTree = "<absolute>"; };
+		5E61E8AB220FCBFD00CA1728 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		5E61E8AD220FE67300CA1728 /* SpeciesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesVC.swift; sourceTree = "<group>"; };
+		5E61E8AF220FE6A600CA1728 /* SpeciesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeciesCell.swift; sourceTree = "<group>"; };
 		5E647027220EA0A700FA9D1F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		5E647029220EA14900FA9D1F /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		5E64702B220EA8C200FA9D1F /* PeopleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVC.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			children = (
 				5E61E8A9220F7B7F00CA1728 /* MenuVC.swift */,
 				5E64702B220EA8C200FA9D1F /* PeopleVC.swift */,
+				5E61E8AD220FE67300CA1728 /* SpeciesVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -73,6 +80,7 @@
 			children = (
 				5E647027220EA0A700FA9D1F /* MenuCell.swift */,
 				5EA4F1CB220EB7F700334B8C /* PeopleCell.swift */,
+				5E61E8AF220FE6A600CA1728 /* SpeciesCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -81,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				5E647029220EA14900FA9D1F /* Resources.swift */,
+				5E61E8AB220FCBFD00CA1728 /* Species.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,7 +262,10 @@
 				5E64702C220EA8C200FA9D1F /* PeopleVC.swift in Sources */,
 				5E709258220E8F98003EEF81 /* AppDelegate.swift in Sources */,
 				5E647028220EA0A700FA9D1F /* MenuCell.swift in Sources */,
+				5E61E8AC220FCBFD00CA1728 /* Species.swift in Sources */,
 				5E61E8AA220F7B7F00CA1728 /* MenuVC.swift in Sources */,
+				5E61E8B0220FE6A600CA1728 /* SpeciesCell.swift in Sources */,
+				5E61E8AE220FE67300CA1728 /* SpeciesVC.swift in Sources */,
 				5E64702A220EA14900FA9D1F /* Resources.swift in Sources */,
 				5E3081C4220E972800CE8A62 /* Constants.swift in Sources */,
 			);
